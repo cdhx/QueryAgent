@@ -327,10 +327,6 @@ Action 6 : execute()
 
 """
 
-# Here is some RULES you need to strictly follow:
-# 1. Do not add_condition(column_name, operator, value) on the same column twice. If you restrict col1 = A and then restrict col1 = B, you will get empty result.
-# 2. Before you use add_condition(column_name, operator, value), you should first see what is in this column by use get_column(column_name).  Otherwise the value you specified may not exist in this table since you donnot know what is in this column.
-#
 WIKISQL_PROMPT = """
 This is a text2sql task, you need to construct a sql query to get the answer of the question from a table.
 I will give you a question and the column name of the table(Table Header).
