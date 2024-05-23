@@ -24,20 +24,38 @@ leveraging ERASER, we further improve another baseline (i.e., AgentBench) by app
 
 
 
-# KB employment
+# KB and data
+
+## KB employment
 You can follow this to employee Freebase in your local device:  
 https://github.com/dki-lab/GrailQA?tab=readme-ov-file#setup
+
+## Embedding file
+
+Due to some policy restrictions, 
+we can't open source the openai embedding file(`fb_relation_embed.json`,`grailqa_question_embed.json`,`graphq_question_embed.json`,`WebQSP_test_question_embed.json`).
+
+You can obtain the embedding yourself based on the code in `similarity_search.py->get_openai_embedding`.
+You need to cache the embedding of all freebase relation (see in `data\fb_relation.txt`),
+and the embedding of all questions.
+
+Make sure the embedding file in a json file(dict), in the format of {question1:emb_ques_1,question2:emb_ques_2,...} and {relation1:emb_rel_1,relation2:emb_rel_2,...}.
+An example is : ```{'base.sa3base.sa3_view.elements_catalog':[-0.00011903620179509744, 0.003563345642760396,...],...}```
+
+Please put the embedding file under the `data` directory.
+
+The cost of this part is very low, 
+less than $1 for all the dataset's relations and questions with the use of cache.
+
+If you have any problem in implement this, please feel free to contact with us.
+
 
 # Run
 1. config the hyper-parameters in `agent_utils/config.py`
 2. fill the api-key and the KB query endpoint in `agent_utils/config.py`
 3. execute `agent_utils/run_exp.py`
 
-**Note:** Due to some policy restrictions, 
-we can't open source the openai embedding file, 
-you can run one yourself based on the code in `similarity_search.py->get_openai_embedding`, 
-The cost of this part is very low, 
-less than $1 for all the dataset's relations and questions with the use of cache.
+
 # File Structure
 
 ```
