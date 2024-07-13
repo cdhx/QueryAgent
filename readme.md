@@ -8,6 +8,8 @@
 [![paper](https://img.shields.io/badge/Paper-ACL2024-lightgrey?style=flat-square)](https://arxiv.org/abs/2310.15517)
 <img width="1175" alt="image" src="https://raw.githubusercontent.com/cdhx/img_store/main/queryagent.png">
 
+[(Paper) QueryAgent: A Reliable and Efficient Reasoning Framework with Environmental Feedback based Self-Correction (ACL 2024)](https://arxiv.org/abs/2403.11886)
+
 > Employing Large Language Models (LLMs)
 for semantic parsing has achieved remarkable
 success. However, we find existing methods fall short in terms of reliability and efficiency when hallucinations are encountered. In
