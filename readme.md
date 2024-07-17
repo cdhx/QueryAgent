@@ -86,13 +86,15 @@ QueryAgent/
 # Citation
 
 ```
-@misc{huang2024queryagent,
-      title={QueryAgent: A Reliable and Efficient Reasoning Framework with Environmental Feedback based Self-Correction}, 
+@misc{huang2024queryagentreliableefficientreasoning,
+      title={QueryAgent: A Reliable and Efficient Reasoning Framework with Environmental Feedback-based Self-Correction}, 
       author={Xiang Huang and Sitao Cheng and Shanshan Huang and Jiayu Shen and Yong Xu and Chaoyun Zhang and Yuzhong Qu},
       year={2024},
       eprint={2403.11886},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2403.11886}, 
+}
 
 ```
 
