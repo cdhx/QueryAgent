@@ -29,8 +29,10 @@ leveraging ERASER, we further improve another baseline (i.e., AgentBench) by app
 # KB and data
 
 ## KB employment
-You can follow this to employee Freebase in your local device:  
+You can follow this to employee Freebase on your local device:  
 https://github.com/dki-lab/GrailQA?tab=readme-ov-file#setup
+
+Please remember to modify the `SPARQLPATH ` in `ag_src/agent_utils/config` to your own endpoint.
 
 ## Embedding file
 
@@ -49,7 +51,7 @@ Please put the embedding file under the `data` directory.
 The cost of this part is very low, 
 less than $1 for all the dataset's relations and questions with the use of cache.
 
-If you have any problem in implement this, please feel free to contact with us.
+Anyway, If you indeed have any problem in implementing this, please feel free to contact us.
 
 
 # Run
