@@ -332,4 +332,4 @@ dependencies:
     - yarl==1.9.2
     - zipp==3.20.2
     - zstandard==0.21.0
-# prefix: /home3/jyshen/.conda/envs/llmqa
+# prefix: /home3/jyshen/.conda/envs/queryagent
